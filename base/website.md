@@ -124,6 +124,3 @@
     - [菜鸟教程](http://www.runoob.com)
     - [Linux教程](http://www.runoob.com/linux/linux-tutorial.html)
     - [Highcharts教程](http://www.runoob.com/highcharts/highcharts-tutorial.html)
-
-- 文档
-    - [github文档](https://github.com/huchunlong/Notes)
