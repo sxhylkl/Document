@@ -32,4 +32,18 @@
     * [搭建本地Yum源](install/Install_yum.md)
 
 ----
+* Linux文档
+    * [Linux基础](linux/command.md)
+    * [Nginx配置文件详解](linux/Nginx.md)
+    * [Linux正则表达式](linux/zhengze.md)
 
+----
+* Luigi文档
+    * [Luigi传参](luigi/luigi.py)
+
+----
+* Python脚本
+    * [输出颜色](python_scripts/ColorPrint.py)
+    * [日期处理](python_scripts/date.py)
+    * [文件处理](python_scripts/file.py)
+    * [连接impala/hive/mysql](python_scripts/sqlalchemy.py)
