@@ -20,6 +20,7 @@
 
 ----
 * 环境搭建文档
+    * [SSH KEY 配置](install/Conf_ssh.md)
     * [MariaDB安装及字符集配置](install/Conf_MariaDB.md)
     * [MySQL字符集配置](install/Conf_Mysql.md)
     * [编辑器ATOM](install/Editor_Atom.md)

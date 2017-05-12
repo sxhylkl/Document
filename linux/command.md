@@ -2,6 +2,7 @@
 
 - [centos7分区](http://blog.csdn.net/huangxiang360729/article/details/52639673)
 - [关机重启参考文档](http://www.centoscn.com/CentOS/help/2013/0725/559.html)
+- [Linux进程状态](http://www.cnblogs.com/itech/p/3208261.html)
 
 ## 常用的文件处理
 ```sh
