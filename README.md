@@ -31,7 +31,10 @@
     * [Gitbook搭建](install/Install_Gitbook.md)
     * [虚拟机环境搭建](install/Install_VirtualBox_Centos7.md)
     * [搭建本地Yum源](install/Install_yum.md)
-
+    * [xmind安装](install/Install_xmind.md)
+    * [安装zsh](install/Install_zsh.md)
+    * [各种快捷键](install/shoutcut_key.md)
+    
 ----
 * Linux文档
     * [Linux基础](linux/command.md)
@@ -44,7 +47,8 @@
 
 ----
 * Python脚本
-    * [输出颜色](python_scripts/ColorPrint.py)
+    * [基础数据处理](python_scripts/base.py)
     * [日期处理](python_scripts/date.py)
     * [文件处理](python_scripts/file.py)
     * [连接impala/hive/mysql](python_scripts/sqlalchemy.py)
+    * [hive文件处理](python_scripts/hive_data.py)

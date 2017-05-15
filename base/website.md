@@ -114,6 +114,8 @@
 
 [游戏运营数据定义](http://www.jianshu.com/p/6c497516a5a2)
 
+[大数据工程师需要掌握的只是](https://mp.weixin.qq.com/s?__biz=MjM5MTYwMjI3Mw==&mid=2652092191&idx=1&sn=00870e2382083002dbef6e02f679af81&chksm=bd5414118a239d07fb36bb3f15c6fa8548773c6ef3d7bea0163bb1e45dc4b74d463403d17fd5&mpshare=1&scene=1&srcid=10257HbmHYAgRN5ezQe6ttws&key=cde9f53f8128acbd2c2e168e1c00d819d206cf92c4dc86e15a595fcbd80a14eec2e422eaeb0d0b6172bb7fd5e97f6722&ascene=0&uin=MTY1NDYxNDg0MQ%3D%3D&devicetype=iMac+Macmini6%2C1+OSX+OSX+10.10.3+build(14D136)&version=11020201&pass_ticket=1SjBBt4865j%2BkhNsjuFzxNUz8LjahL6dEn4%2FLsX354ln6gjAjo0boKIPDoMPvs9x)
+
 [mysql数据的导出导入](http://blog.chinaunix.net/uid-16844903-id-3411118.html)
 
 - Hcode
