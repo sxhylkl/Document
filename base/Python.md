@@ -2,6 +2,17 @@
 
 [参考文档](https://my.oschina.net/zyzzy/blog/115096)
 
+## Counter计数器(统计字符出现的个数)
+
+```py
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+from collections import Counter
+
+print Counter('aabbccdser')
+print Counter('aabbccdser')['a']
+```
+
 ## zip
 
 ```python

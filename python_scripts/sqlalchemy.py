@@ -12,6 +12,19 @@ from sqlalchemy.engine import create_engine
 import pandas as pd
 
 
+def sql_to_df(sql, db=None):
+    # 将mysql检索出结果放入dataframe中返回
+    db = db or settings_dev.platform
+    url = mysql_template.format(db=db)
+    engine = sqlalchemy.create_engine(url)
+    conn = engine.raw_connection()
+    try:
+        df = pd.read_sql(sql, conn)
+    finally:
+        conn.close()
+    return df
+
+
 def hql_to_df(hql, server='impala', db=None):
     '''
     将hql检索出结果放入dataframe中返回，默认使用impala，速度更快。

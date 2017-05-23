@@ -98,15 +98,11 @@
 
 [在线编程网站](https://zhuanlan.zhihu.com/p/21808087)
 
-[python列表操作详情](http://www.jb51.net/article/47978.htm)
-
 [python元组遍历](http://www.iplaypy.com/jichu/tuple.html)
 
 [dataframe选择数据](http://jingyan.baidu.com/article/e52e3615a43c8940c70c515e.html)
 
 [curl开发指南](http://www.ruanyifeng.com/blog/2011/09/curl.html)
-
-[python字符串/元组/列表/字典互转](http://www.cnblogs.com/linjiqin/p/3674356.html)
 
 [python异常处理](http://www.cnblogs.com/dkblog/archive/2011/06/24/2089026.html)
 
@@ -117,6 +113,16 @@
 [大数据工程师需要掌握的只是](https://mp.weixin.qq.com/s?__biz=MjM5MTYwMjI3Mw==&mid=2652092191&idx=1&sn=00870e2382083002dbef6e02f679af81&chksm=bd5414118a239d07fb36bb3f15c6fa8548773c6ef3d7bea0163bb1e45dc4b74d463403d17fd5&mpshare=1&scene=1&srcid=10257HbmHYAgRN5ezQe6ttws&key=cde9f53f8128acbd2c2e168e1c00d819d206cf92c4dc86e15a595fcbd80a14eec2e422eaeb0d0b6172bb7fd5e97f6722&ascene=0&uin=MTY1NDYxNDg0MQ%3D%3D&devicetype=iMac+Macmini6%2C1+OSX+OSX+10.10.3+build(14D136)&version=11020201&pass_ticket=1SjBBt4865j%2BkhNsjuFzxNUz8LjahL6dEn4%2FLsX354ln6gjAjo0boKIPDoMPvs9x)
 
 [mysql数据的导出导入](http://blog.chinaunix.net/uid-16844903-id-3411118.html)
+
+[hdfs架构简述](http://www.cnblogs.com/f1194361820/p/6856292.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
+
+[大牛的hdfs笔记](http://www.cnblogs.com/laov/p/3434917.html)
+
+[python的git文档](https://github.com/lijin-THU/notes-python?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
+
+[浅谈数据仓库的基本架构](https://my.oschina.net/leejun2005/blog/189035)
+
+[kylin-mondrian-saiku](http://tech.youzan.com/kylin-mondrian-saiku/)
 
 - Hcode
     - [Hcode文档](https://code.hcharts.cn/docs)

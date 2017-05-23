@@ -58,19 +58,35 @@ describe database test;     # 查询数据库所在文件位置目录
 ```
 
 - 数据查询
-```sh
+```py
 invalidate metadata;    # 刷新impala
 hive -e "select * from 数据库名.表名 限制条件"   # hive一次执行命令
 # 静默模式，可以在输出结果中去掉OK、Time taken等行，以及一些其他无关紧要的输出信息,并将查询到的信息存入文件
 hive -S -e "select * from 数据库名.表名 限制条件" > 文件路径/文件名
 # ---------------------------------------------
 # 表生成函数：接受0个或多个输入，产生多列或多行输出
-select 字段,字段 from 表名 lateral view  explode(array(1,2,3)) subview as sub where 限制条件 ;
-# array函数的使用
-select explode(array(1,2,3)) from 表名 where 限制条件;
-# 生成日期格式
-to_date(日期)
-# 计算字段长度
-LENGTH(字段名)
+SELECT 字段,字段 from 表名 lateral view  explode(array(1,2,3)) subview as sub where 限制条件 ;
+SELECT explode(array(1,2,3)) from 表名 where 限制条件;        # array函数的使用
+to_date(日期)          # 生成日期格式
+LENGTH(字段名)         # 计算字段长度
+row_number() over(partition BY 字段名1 ORDER BY 字段名2 DESC) AS rn     # 排序
+regexp_replace(substr(字段名,1,10),'-','')                             # 字符串操作
+substr(字段名, start_index, num)          # 字符串截取，开始截取的位置(1开始)，截取的位数
+select decode(条件值,值1,翻译值1,...值n,翻译值n,默认值)       # if条件值==值1，返回翻译值1，相当于case when
+case when 条件 then 条件为真时的值 else 条件为假时的值 end     
 ```
 
+
+
+# Impala
+cloudera 公司出品的另一个 SQL 引擎，功能是 Hive 的一个子集，与 Hive 的区别如下：
+
+- 使用C++语言实现，基于内存计算而非hive那种转化为mr任务的模式，因此速度比hive快很多，方便用来做一些交互式的SQL查询
+- 自身不负责元数据管理，依赖 Hive 存在
+- 功能是Hive的子集，如hive可以通过 json serde 直接将json格式的文件转化为表，但impala不行。在我们的数据中，行为日志是以json格式存在的，因此，对于行为日志的分析只能通过 hive，其它大部分可以用 impala 替代
+- 由于是基于内存的计算，当需要的内存超过已有的内存时会报错。而hive无此问题，因为中间数据会使用磁盘暂存。
+
+在hue中选择impala editor即可使用，操作与hive一致。 由于impala自己不维护表结构信息，而是使用hive的信息，且该过程并非实时的。因此， 当hive中表结构发生改变时，需要先执行以下命令，使原来的元数据无效，然后重新获取。
+```
+invalidate metadata;
+```

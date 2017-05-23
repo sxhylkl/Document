@@ -56,6 +56,7 @@ def check_week_month(date, mw, num=3):
         if date[6:8] == str(calendar.monthrange(int(date[:4]), int(date[4:6]))[1]):
             return True
     if mw.upper() == 'W':
+        # 0代表周一
         if num - 1 == datetime.datetime.strptime(date, '%Y%m%d').weekday():
             return True
 

@@ -16,6 +16,9 @@
     * [git基础](base/git.md)
     * [highcharts基础](base/highcharts.md)
     * [mysql基础](base/mysql.md)
+    * [hdfs基础](base/hdfs.md)
+    * [OLTP和OLAP](base/OLTP_OLAP.md)
+    * [Spark基础](base/Spark.md)
     * [网址汇总](base/website.md)
 
 ----
@@ -52,3 +55,4 @@
     * [文件处理](python_scripts/file.py)
     * [连接impala/hive/mysql](python_scripts/sqlalchemy.py)
     * [hive文件处理](python_scripts/hive_data.py)
+    * [yield](python_scripts/yield.py)

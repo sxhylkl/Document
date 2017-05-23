@@ -1,8 +1,19 @@
 # CDH搭建 - Centos7
 
+> * [cloudera官方文档](https://www.cloudera.com/documentation/enterprise/latest/topics/quickstart.html)
+> * [Hive官网](https://cwiki.apache.org/confluence/display/Hive/Home)
+> * [Hive官网-入门](https://cwiki.apache.org/confluence/display/Hive/GettingStarted)
+> * [Hive官网-教程](https://cwiki.apache.org/confluence/display/Hive/Tutorial#Tutorial-GettingStarted)
+> * [Hadoop教程和示例](https://github.com/romainr/hadoop-tutorials-examples)
 > * [HUE参考文档](https://github.com/cloudera/hue)
+> * [HUE文档](http://gethue.com/automatic-high-availability-with-hue-and-cloudera-manager/)
 > * [CDH搭建-参考文档1](http://blog.csdn.net/wzy0623/article/details/51768968)
 > * [CDH搭建-参考文档2](http://blog.csdn.net/shenliang1985/article/details/50460828)
+> * [CDH安装失败后重装](http://www.cnblogs.com/ivictor/p/4846358.html)
+> * [Hadoop-shell命令](https://hadoop.apache.org/docs/r1.0.4/cn/hdfs_shell.html)
+> * [hive学习笔记](http://blog.csdn.net/column/details/hive-home.html?&page=2)
+> * [Hive-JSON-Serde工具](https://github.com/rcongiu/Hive-JSON-Serde)
+> * [Hive-Join操作](http://www.cnblogs.com/ggjucheng/archive/2013/01/15/2860723.html)
 
 ------
 ## 1.安装Centos7并配置环境
