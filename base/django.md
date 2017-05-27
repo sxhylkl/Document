@@ -1,5 +1,6 @@
 # Django
 
+- [django官方文档](http://djangobook.py3k.cn/2.0/)
 - [参考文档](http://www.ziqiangxuetang.com/django/django-tutorial.html)
 
 ## widthratio

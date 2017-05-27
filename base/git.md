@@ -1,5 +1,15 @@
 # Git 入门指南
 
+> * [Git - Book](https://git-scm.com/book/zh/v1)
+> * [git - 简易指南](http://www.bootcss.com/p/git-guide/)
+> * [Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)
+> * [pull - fetch](https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch)
+> * [rebase - fetch - pull](https://stackoverflow.com/questions/14894768/in-git-how-is-fetch-different-than-pull-and-how-is-merge-different-than-rebase)
+> * [pull - merge](https://stackoverflow.com/questions/17339091/difference-between-git-pull-master-vs-git-merge-master)
+> * [Git教程 - 廖雪峰](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+> * [15分钟交互式学习git](https://try.github.io/levels/1/challenges/19)
+> * [Git暂存区](http://blog.csdn.net/agul_/article/details/7835786)
+> * [git权威指南 - 读书笔记](http://hustlzp.com/post/2014/03/git-solo)
 > * [gitignore配置](http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html)
 
 ## GitHub中https和SSH的区别

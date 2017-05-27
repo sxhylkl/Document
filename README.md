@@ -36,6 +36,7 @@
     * [搭建本地Yum源](install/Install_yum.md)
     * [xmind安装](install/Install_xmind.md)
     * [安装zsh](install/Install_zsh.md)
+    * [mac神器Homebrew安装](install/Install_brew.md)
     * [各种快捷键](install/shoutcut_key.md)
     
 ----
@@ -56,3 +57,9 @@
     * [连接impala/hive/mysql](python_scripts/sqlalchemy.py)
     * [hive文件处理](python_scripts/hive_data.py)
     * [yield](python_scripts/yield.py)
+
+----
+* SQL
+    * [in、not in、exists、not exists的用法和区别](sql/in_exist.md)
+    * [一些基本的SQL语句(基于ORACLE)](sql/oracle_base_sql.md)
+    * [SQL排序](sql/sql_rank.md)

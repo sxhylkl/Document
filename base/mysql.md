@@ -15,7 +15,8 @@ show index from 表名;     # 查询索引
 alter table 表名 add 列名 数据类型;     # 添加列
 alter table 表名 change 老列名 新列名 新数据类型;     # 修改列
 alter table 表名 modify column 列名 新数据类型;      # 修改列数据类型
-alter table 表名 add index 索引名 (字段1,字段2);     # 添加索引
+alter table 表名 add index 索引名 (字段1,字段2);     # 添加索引（多列）
+ALTER TABLE table_name DROP INDEX index_name;     # 删除索引
 create table 复制后表名 as select * from 复制前表名 限制条件;  # 复制表结构和数据
 ```
 
@@ -24,6 +25,21 @@ create table 复制后表名 as select * from 复制前表名 限制条件;  # �
 reverse(substring(reverse(user_id), 8)) AS server
 regexp_replace(substr(act_time,1,10),'-','')
 substr(uid,1,1)
+```
+
+## 类型转换 - 字符串转换为数值类型
+
+```
+CAST(xxx  AS   类型), CONVERT(xxx,类型)
+类型必须用下列的类型:
+    二进制,同带binary前缀的效果 : BINARY    
+    字符型,可带参数 : CHAR()     
+    日期 : DATE     
+    时间: TIME     
+    日期时间型 : DATETIME     
+    浮点数 : DECIMAL      
+    整数 : SIGNED     
+    无符号整数 : UNSIGNED
 ```
 
 ## 数据库/表导入导出
@@ -83,20 +99,6 @@ MySQL数据类型	| 	含义	|
 6.varchar会使用1-3个字节来存储长度，text不会。
 ```
 
-- 类型转换 - 字符串转换为数值类型
-
-```
-CAST(xxx  AS   类型), CONVERT(xxx,类型)
-类型必须用下列的类型:
-    二进制,同带binary前缀的效果 : BINARY    
-    字符型,可带参数 : CHAR()     
-    日期 : DATE     
-    时间: TIME     
-    日期时间型 : DATETIME     
-    浮点数 : DECIMAL      
-    整数 : SIGNED     
-    无符号整数 : UNSIGNED
-```
 
 
 

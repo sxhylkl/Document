@@ -50,6 +50,8 @@ Ctrl + shift + P 调用命令面板 -> 输入install Package -> 插件名 -> 回
 - Color Schemes (配色方案，包括各种主题)
 - MarkdownEditing （Markdown语法高亮）
 - OmniMarkupPreviewer   (用来预览markdown编辑的效果,渲染代码高亮)
+- git （git版本库管理）
+- autopep8
 
 
 ## 常用快捷键

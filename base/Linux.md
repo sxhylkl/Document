@@ -1,5 +1,8 @@
 # Linux
 
+> * [Linux命令大全](http://man.linuxde.net)
+> * [鸟哥的linux私房菜](http://linux.vbird.org/new_linux.php)
+
 ## for的使用
 
 ```sh
