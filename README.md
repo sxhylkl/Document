@@ -1,4 +1,5 @@
 # 技术文档集
+> 于2017年5月12日开始陆续的将保存在各处的笔记和新学习到的知识点逐渐的汇总和整理
 
 * [目录](README.md)
 
@@ -44,6 +45,7 @@
     * [Linux基础](linux/command.md)
     * [Nginx配置文件详解](linux/Nginx.md)
     * [Linux正则表达式](linux/zhengze.md)
+    * [Rsync的用法](linux/rsync.md)
 
 ----
 * Luigi文档
@@ -51,15 +53,25 @@
 
 ----
 * Python脚本
+    * [python说明](python_scripts/README.md)
+        * [python基础](python_scripts/common/common.md)
+        * [python编码](python_scripts/common/encode.md)
+        * [python类型](python_scripts/common/type.md)
     * [基础数据处理](python_scripts/base.py)
     * [日期处理](python_scripts/date.py)
+    * [python编码](python_scripts/encode.py)
     * [文件处理](python_scripts/file.py)
-    * [连接impala/hive/mysql](python_scripts/sqlalchemy.py)
     * [hive文件处理](python_scripts/hive_data.py)
+    * [连接impala/hive/mysql](python_scripts/sqlalchemy.py)
     * [yield](python_scripts/yield.py)
+    * [多进程并发](python_scripts/pool.py)
 
 ----
 * SQL
     * [in、not in、exists、not exists的用法和区别](sql/in_exist.md)
-    * [一些基本的SQL语句(基于ORACLE)](sql/oracle_base_sql.md)
     * [SQL排序](sql/sql_rank.md)
+    * [Hive基础命令](sql/hive_common.md)
+        * [hive中各种join的区别](sql/hive_join.md)
+    * [Oracle基本的SQL语句](sql/oracle_common.md)
+    * [MySql常用命令](sql/mysql_common.md)
+        * [MySql数据导入导出](sql/mysqldump.md)

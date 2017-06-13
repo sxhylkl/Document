@@ -124,6 +124,17 @@ import pandas as pd
 pd.read_excel('path/filename.xlsx', 'sheet_name')                        # 读取Excel文件
 result_df.to_excel('path/filename.xlsx',sheet_name='sheet_name')         # 写入文件到Excel
 pd.read_csv('foo.csv')                                                   # 读取CSV文件
-result_df.to_csv('path/filename', sep = '\t', index = False, header = False)    # 写入文件到CSV
+result_df.to_csv('path/filename', sep = '\t', index = False, header = False)  # 写入文件到CSV
 ```
 
+## 遍历DataFrame
+```py
+import pandas as pd
+def get_data():
+    for _, row in df.iterrows():
+        return [row.字段1, row.字段2]
+
+# 生成DataFrame
+column = ['字段1', '字段2']
+df = pd.DataFrame(get_data(), columns=column)
+```

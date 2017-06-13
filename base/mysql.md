@@ -101,5 +101,15 @@ MySQL数据类型	| 	含义	|
 
 
 
+## 更改权限
 
+远程访问某台机器的某个数据库
 
+```sql
+grant all privileges on 库名.表名 to '用户名'@'用户地址' identified by '密码' with grant option;
+flush privileges;
+# 注：所有的数据库使用“*”，所有表使用“*”
+# 用户地址可以是localhost、ip地址、机器名字、域名，也可以用'%'表示从任何地址连接
+# 权限：select,insert,update,delete,create,drop,index,alter,grant,references,reload,shutdown,process,file等14个权限。
+# 当使用all privileges或者all代替，表示赋予用户全部权限。
+```

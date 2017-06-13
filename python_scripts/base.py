@@ -14,9 +14,6 @@ import os
 import sys
 import time
 from ipip import IP
-# import sys
-# reload(sys)
-# sys.setdefaultencoding("utf-8")
 
 
 def dis_task():

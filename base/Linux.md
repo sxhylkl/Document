@@ -2,6 +2,7 @@
 
 > * [Linux命令大全](http://man.linuxde.net)
 > * [鸟哥的linux私房菜](http://linux.vbird.org/new_linux.php)
+> * [VIM常用操作命令梳理](https://zhuanlan.zhihu.com/p/27232184?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 
 ## for的使用
 

@@ -12,7 +12,7 @@
 > * [git权威指南 - 读书笔记](http://hustlzp.com/post/2014/03/git-solo)
 > * [gitignore配置](http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html)
 
-## GitHub中https和SSH的区别
+## 一、GitHub中https和SSH的区别
 - https
   - 可以随意克隆任何人github上的项目
   - push时需要验证用户名和密码
@@ -21,7 +21,7 @@
   - push时不需要验证用户名和密码，如果配置SSH key时候设置了密码，则需要输入密码
   - github添加Deploy keys时，需选中Allow write access才能push，否则为只读模式
 
-## 常用命令
+## 二、常用命令
 
 - 获取帮助
 ```sh
@@ -82,10 +82,32 @@ $ git commit -m 'Explain'     # 版本提交 - 加提交备注
 $ git push                    # 版本提交 - 将提交内容加入版本库
 ```
 
-- 撤销commit(回退到之前某次提交的状态)
+## 三、撤销或回滚到某个版本
+### 1、没有push的情况
+> 发生在本地代码库，用于add、commit后取消提交
 ```sh
-$ git log                   # 查看commit日志,按键q 退出commit日志
-$ commit 哈希值              # 找到想要回退的那次的哈希值
-$ git reset --hard 哈希值    # 回退
+# 查找想要回退到版本的哈希值
+git log
+# 回退
+git reset [--soft | --mixed | --hard ] 回退到版本的哈希值
+# 注：git reset --mixed 哈希值 等价于 git reset 哈希值
 ```
+- mixed：保留源码，将commit信息和index信息会退到某个版本
+- soft：保留源码，只将commit信息回退到某个版本，不回退index的信息
+- hard：源码、commit信息、index信息都会会退到某个版本(注：改变的是本地代码仓库源码)
 
+### 2、push后的情况
+> 同时回滚线上代码和本地代码
+```sh
+# 查询需要回滚的版本的哈希值(注意：这里不是回滚到的版本的哈希值)
+git log
+# 回滚
+git revert 哈希值
+# 更新线上的版本
+git push
+```
+注意：
+- 如果已经push到线上的代码库，reset删除指定的commit以后，git push可能会导致很多冲突，revert不会导致冲突
+- git reset 是直接删除指定的commit，head向后移动
+- git revert 是用一次新的commit来回滚之前的commit，head向前移动
+- 日后现有分支和历史分支需要合并时,reset 恢复部分的代码依然会出现在历史分支里.但是revert 方向提交的commit 并不会出现在历史分支里.
