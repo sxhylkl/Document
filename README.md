@@ -43,9 +43,10 @@
 ----
 * Linux文档
     * [Linux基础](linux/command.md)
-    * [Nginx配置文件详解](linux/Nginx.md)
     * [Linux正则表达式](linux/zhengze.md)
+    * [Crontab用法](linux/crontab.md)
     * [Rsync的用法](linux/rsync.md)
+    * [Nginx配置文件详解](linux/Nginx.md)
 
 ----
 * Luigi文档
@@ -74,4 +75,5 @@
         * [hive中各种join的区别](sql/hive_join.md)
     * [Oracle基本的SQL语句](sql/oracle_common.md)
     * [MySql常用命令](sql/mysql_common.md)
-        * [MySql数据导入导出](sql/mysqldump.md)
+        * [MySQL的备份恢复](sql/mysqldump.md)
+        * [MySQL - Centos7安装](sql/mysql_install.md)

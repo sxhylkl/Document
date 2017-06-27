@@ -247,3 +247,12 @@ Out[51]: [111, 122, 133]
 '\t'.join(map(str, [user_id, server, account, coin))
 '\t'.join(map(str, ['1','2','3']))
 ```
+
+
+```py
+In [84]: print c
+[1, 2, 4, 6, 3, 7]
+
+In [85]: [i for i in c if i%2==0]
+Out[85]: [2, 4, 6]
+```
