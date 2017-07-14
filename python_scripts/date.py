@@ -11,6 +11,11 @@ import datetime
 import calendar
 
 
+def get_localdate(date_format_after='%Y%m%d'):
+    # 获取当前日期时间
+    return time.strftime(date_format_after, time.localtime(time.time()))
+
+
 def DateFormat(date, date_format_after='%Y-%m-%d', date_format_before='%Y%m%d'):
     # 格式化日期：默认将日期20160101转化为：2016-01-01 格式
     return datetime.datetime.strftime(
@@ -81,3 +86,30 @@ def get_tamp(stmp, date_format_after='%Y-%m-%d'):
     return time.strftime(date_format_after, time.localtime(stmp))
     # 方法二
     return datetime.datetime.fromtimestamp(stmp).strftime(date_format_after)
+
+
+```
+python中时间日期格式化符号：
+%y 两位数的年份表示（00 - 99）
+%Y 四位数的年份表示（000 - 9999）
+%m 月份（01 - 12）
+%d 月内中的一天（0 - 31）
+%H 24小时制小时数（0 - 23）
+%I 12小时制小时数（01 - 12）
+%M 分钟数（00 = 59）
+%S 秒（00 - 59）
+
+%a 本地简化星期名称
+%A 本地完整星期名称
+%b 本地简化的月份名称
+%B 本地完整的月份名称
+%c 本地相应的日期表示和时间表示
+%j 年内的一天（001 - 366）
+%p 本地A.M.或P.M.的等价符
+%U 一年中的星期数（00 - 53）星期天为星期的开始
+%w 星期（0 - 6），星期天为星期的开始
+%W 一年中的星期数（00 - 53）星期一为星期的开始
+%x 本地相应的日期表示
+%X 本地相应的时间表示
+%Z 当前时区的名称
+```

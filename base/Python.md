@@ -252,7 +252,24 @@ Out[51]: [111, 122, 133]
 ```py
 In [84]: print c
 [1, 2, 4, 6, 3, 7]
-
+# 列表推导式
 In [85]: [i for i in c if i%2==0]
 Out[85]: [2, 4, 6]
+In [154]: a = [2,4,6]
+In [155]: b = [1,3,9]
+In [158]: [i * j for i in a for j in b]
+Out[158]: [2, 6, 18, 4, 12, 36, 6, 18, 54]
+# [i * j for i in a for j in b] 等价于下列for循环
+for i in a:
+    for j in b:
+        print i*j
+# 遍历字典
+In [168]: for name ,value in a.items():
+   .....:     print name,value
 ```
+
+## 数据结构
+列表： 可重复，可修改，字符串和元组不可修改，[]
+元组： 可重复，不可修改，(,)
+集合： 无序不重复，用于消除重复元素和检测成员，set()
+字典： 键值对的结合，且键不可重复，dict()，{}

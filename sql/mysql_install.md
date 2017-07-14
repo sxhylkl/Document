@@ -1,5 +1,7 @@
 # MySQL - Centos7安装
 
+[brew安装MySQL](http://www.cnblogs.com/xueweihan/p/5143066.html)
+
 ## 一、通过官网下载安装MySQL
 ```sh
 # wget http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm

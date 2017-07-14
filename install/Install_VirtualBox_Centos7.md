@@ -82,8 +82,7 @@ $ cat /etc/hosts
 IP地址 主机名
 # ---------------------------------------------
 # 配置hostname
-$ hostname master
-$ hostname
+$ vim /etc/hostname
 master
 # ---------------------------------------------
 # 配置resolv.conf 

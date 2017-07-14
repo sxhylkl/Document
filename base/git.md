@@ -1,4 +1,4 @@
-# Git 入门指南
+# Git入门
 
 > * [Git - Book](https://git-scm.com/book/zh/v1)
 > * [git - 简易指南](http://www.bootcss.com/p/git-guide/)
@@ -111,3 +111,12 @@ git push
 - git reset 是直接删除指定的commit，head向后移动
 - git revert 是用一次新的commit来回滚之前的commit，head向前移动
 - 日后现有分支和历史分支需要合并时,reset 恢复部分的代码依然会出现在历史分支里.但是revert 方向提交的commit 并不会出现在历史分支里.
+
+### 删除commit后的恢复
+```sh
+# 查询删除的commit_id
+git reflog show     # 查看所有分支的操作记录
+git log -g          # 查看所有分支的操作记录
+# 恢复到删除前的commit_id
+git reset commit_id
+```

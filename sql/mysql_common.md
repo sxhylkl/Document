@@ -42,3 +42,11 @@ SELECT USER();
 ```sql
 select * from information_schema.TABLES where information_schema.TABLES.TABLE_SCHEMA = '数据库名' and information_schema.TABLES.TABLE_NAME = '表名';
 ```
+
+### 4.2 字段类型所占字节
+
+- 整型
+    - tinyint ：占1个字节，用于存储(-128 至 127 的整数)(负2的7次幂 至 2的7次幂-1)
+    - smallint ：占2个字节，用于存储(-32768 至 32767 的整数)(负2的15次幂 至 2的15次幂-1)
+    - int ：占4个字节，用于存储(负2的31次幂 至 2的31次幂-1 的整数)
+    - bigint ：占8个字节，用于存储(负2的63次幂 至 2的63次幂-1 的整数)

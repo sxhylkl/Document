@@ -3,6 +3,7 @@
 > * [官方下载地址](http://www.sublimetext.com/3)
 > * [设置详细说明](http://www.cnblogs.com/pdq-phper/p/5093486.html)
 > * [常用快捷键](http://www.codesec.net/view/219715.html)
+> * [Emmet：HTML/CSS代码快速编写神器](http://www.iteye.com/news/27580)
 
 ## 常用操作
 ```sh
@@ -52,7 +53,8 @@ Ctrl + shift + P 调用命令面板 -> 输入install Package -> 插件名 -> 回
 - OmniMarkupPreviewer   (用来预览markdown编辑的效果,渲染代码高亮)
 - git （git版本库管理）
 - autopep8
-
+- html5
+- emment  (HTML/CSS代码快速编写神器)
 
 ## 常用快捷键
  ```sh
