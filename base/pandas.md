@@ -4,6 +4,8 @@ website.md# pandas技术整合
 > * [pandas的pdf文档](http://pandas.pydata.org/pandas-docs/version/0.19.2/pandas.pdf)
 > * [参考文档](https://docs.scipy.org/doc/numpy/reference/generated/numpy.isinf.html)
 > * [pandas的git文档](https://github.com/pandas-dev/pandas)
+> * [Pandas参考文档](http://blog.csdn.net/cbbing/article/details/50721468)
+
 
 ## 常用导入包
 ```py
