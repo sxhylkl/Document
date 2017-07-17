@@ -11,6 +11,7 @@
 > * [Git暂存区](http://blog.csdn.net/agul_/article/details/7835786)
 > * [git权威指南 - 读书笔记](http://hustlzp.com/post/2014/03/git-solo)
 > * [gitignore配置](http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html)
+> * [常用Git命令大全思维导图](http://blog.csdn.net/mynameishuangshuai/article/details/51657324)
 
 ## 一、GitHub中https和SSH的区别
 - https
