@@ -1,6 +1,7 @@
 # Python技术
 
-[参考文档](https://my.oschina.net/zyzzy/blog/115096)
+- [参考文档](https://my.oschina.net/zyzzy/blog/115096)
+- [Python-copy()与deepcopy()区别](http://blog.csdn.net/qq_32907349/article/details/52190796)
 
 ## Counter计数器(统计字符出现的个数)
 

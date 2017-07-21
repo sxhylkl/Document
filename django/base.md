@@ -5,6 +5,7 @@
 > * [Python安装包](https://www.python.org/downloads/)
 > * [Django安装包](https://www.djangoproject.com/download/)
 > * [mysql-python安装包](https://sourceforge.net/projects/mysql-python/)
+> * [django的auth](http://www.cnblogs.com/Finley/p/5575305.html)
 
 ## 一、MVC 设计模式
 > MVC 是一种软件开发的方法，它把代码的定义和数据访问的方法（模型）与请求逻辑 （控制器）还有用户接口（视图）分开来
@@ -360,7 +361,39 @@ urlpatterns = [
     url(r'^app/', include('app.urls')),
 ]
 ```
+## 十四、auth模块
+> - auth模块是Django提供的标准权限管理系统，可以提供用户身份认证、用户组和权限管理
 
+用户操作
+```py
+# 新增用户 - 用户密码通过hash值存储，不存储明文
+from django.contrib.auth.models import User
+user = User.objects.create_user(username, email, password)
+user.save()
+# 认证用户 - 认证用户的密码是否有效，如有效，则返回用户的User对象，无效则返回None
+from django.contrib.auth import authenticate
+user = authenticate(username=username, password=password)
+# 修改密码（set_password）,需配合authenticate使用
+user = auth.authenticate(username=username, password=old_password)
+if user is not None:
+    user.set_password(new_password)
+    user.save()
+# 登陆 - login向session中添加SESSION_KEY, 便于对用户进行跟踪，login向session中添加SESSION_KEY, 便于对用户进行跟踪
+from django.contrib.auth import login
+user = authenticate(username=username, password=password)
+if user is not None:
+    if user.is_active:
+        login(request, user)
+# 退出登陆 - logout会移除request中的user信息, 并刷新session
+from django.contrib.auth import logout
+def logout_view(request):
+    logout(request)
+# 只允许登录的用户访问 - @login_required修饰器修饰的view函数会先通过session key检查是否登录, 已登录用户可以正常的执行操作, 未登录用户将被重定向到login_url指定的位置，若未指定login_url参数, 则重定向到settings.LOGIN_URL
+from django.contrib.auth.decorators import login_required
+@login_required(login_url='/accounts/login/')
+def my_view(request):
+    ...
+```
 
 -----
 

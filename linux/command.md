@@ -166,6 +166,13 @@ sudo -i
 # 查看当前文件夹下文件大小
 du -sh *
 ```
+整数计算命令
+```sh
+$ nginx echo $[1 + 2]
+3
+$ echo `expr 1 + 2`
+3
+```
 
 # crontab -l
 ```
