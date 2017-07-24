@@ -395,6 +395,43 @@ def my_view(request):
     ...
 ```
 
+## 十五、其他查询
+values和values_list的区别，以及annotate计算
+```py
+In [1]: from app.models import User
+In [24]: from django.db.models import Sum
+In [25]: from django.db.models import Count
+
+In [4]: users =  User.objects.values('id')
+In [5]: users
+Out[5]: <QuerySet [{'id': 1L}, {'id': 2L}, {'id': 3L}, {'id': 4L}]>
+
+In [6]: users_1 =  User.objects.values_list('id')
+In [7]: users_1
+Out[7]: <QuerySet [(1L,), (2L,), (3L,), (4L,)]>
+
+In [9]: users_2 =  User.objects.values_list('id',flat=True)
+In [10]: users_2
+Out[10]: <QuerySet [1L, 2L, 3L, 4L]>
+
+In [19]: users_1 =  User.objects.values_list('id').first()
+In [22]: users_1
+Out[22]: (1L,)
+
+In [46]: num = User.objects.values_list('id', 'sex')
+In [47]: num
+Out[47]: <QuerySet [(1L, u'm'), (2L, u'f'), (3L, u'm'), (4L, u'm')]>
+
+In [40]:  num = User.objects.values_list('id').annotate(Sum('id'),Count('name'),)
+In [41]: num
+Out[41]: <QuerySet [(1L, Decimal('1'), 1), (2L, Decimal('2'), 1), (3L, Decimal('3'), 1), (4L, Decimal('4'), 1)]>
+
+# ==============说明===========
+values方法用于获取number字段的字典列表。
+values_list用于获取number的元组列表。
+values_list方法加个参数flat=True用于获取number的值列表。
+```
+
 -----
 
 ## 说明一、Django支持的数据库
